@@ -60,7 +60,7 @@ Priority
 
 _Сначала выполняем_ `git add .`
 
-_Не забываем про команду_ `git commit -m _коментарий_`
+_Не забываем про команду_ `git commit -m _комментарий_`
 ```
 $ git commit -m "bag reports"
 [Bag_Reports b2389c2] bag reports
