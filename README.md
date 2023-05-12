@@ -9,18 +9,31 @@
 - Charles 
 - Mobile testing 
 ```
-  _Ветка со здается командой `git branch _название ветки_`
+  _Ветка создается командой_ `git branch _название ветки_`
   ```
 $ git branch Postman
 ```
-  _так же если  нужно создать много веток то команду можно повторять через знак `&&`_
+  _так же если  нужно создать много веток, то команду можно повторять через знак `&&`_
 ```
 $ git branch Jmeter && git branch Checklist && git branch Bag_Reports && git branch SQL && git branch Charles && git branch Mobile_testing
 ```
-**2.** _Запушить все ветки на внешний репозиторий_ 
-Git push -u origin название ветки
+**2.** _Запушить все ветки на внешний репозиторий_
 
-3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта 
+_Командой_ `git push -u origin _название ветки_` _загружается на внешний репозиторий_
+```
+$ git push -u origin Postman
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'Postman' on GitHub by visiting:
+remote:      https://github.com/h1stav/test_branch/pull/new/Postman
+remote:
+To https://github.com/h1stav/test_branch.git
+ * [new branch]      Postman -> Postman
+branch 'Postman' set up to track 'origin/Postman'.
+```
+_p/c, так делаем с каждой веткой_
+
+**3.** _В ветке **Bag Reports** сделать текстовый документ со структурой баг репорта_ 
 Git checkout название ветки
 
 4. Запушить структуру багрепорта на внешний репозиторий
