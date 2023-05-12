@@ -156,7 +156,20 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/h1stav/test_branch.git
    883673d..89fe4cb  Checklist -> Checklist
 ```
-**9.** На внешнем репозитории сделать Pull Request ветки CheckLists в main 
+**9.** _На внешнем репозитории сделать **Pull Reques**t ветки **CheckLists** в **main**_ 
 
 
-**10.** Синхронизировать Внешнюю и Локальную ветки Main
+**10.** _Синхронизировать Внешнюю и Локальную ветки **Main**_
+
+_Это делается простой командой_ `git pull`
+```
+$ git pull
+```
+Result
+```
+Updating b2389c2..235aa79
+Fast-forward
+ check_attributes.txt | 5 +++++
+ 1 file changed, 5 insertions(+)
+ create mode 100644 check_attributes.txt
+ ```
