@@ -58,7 +58,7 @@ Priority
 ```
 **4.** _Запушить структуру багрепорта на внешний репозиторий_
 
-_Командой `git add .` подгатавливаем_
+_Сначала выполняем_ `git add .`
 
 _Не забываем про команду_ `git commit -m _коментарий_`
 ```
@@ -80,6 +80,7 @@ To https://github.com/h1stav/test_branch.git
    883673d..b2389c2  Bag_Reports -> Bag_Reports
 ```
 **5.** _Вмержить ветку **Bag Reports** в **Main**_ 
+
 _Для того чтобы вмержить ветку `Bag Reports`, нужно сначала перейти на ту ветку, куда мы хотим ее вмержить_
 
 _Для этого используем сначала команду_ `git checkout main`
@@ -135,9 +136,26 @@ Precondition
 Steps
 Expected Result
 ```
-**8.** Запушить структуру на внешний репозиторий 
-
-
+**8.** _Запушить структуру на внешний репозиторий_ 
+_Данное задание повторяется с 4 заданием, также можно попробовать написать команду в одну строку_
+```
+$ git add . && git commit -m "Checklist" && git push
+```
+Result
+```
+warning: in the working copy of 'check_attributes.txt', LF will be replaced by CRLF the next time Git touches it
+[Checklist 89fe4cb] Checklist
+ 1 file changed, 5 insertions(+)
+ create mode 100644 check_attributes.txt
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 326 bytes | 326.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/h1stav/test_branch.git
+   883673d..89fe4cb  Checklist -> Checklist
+```
 **9.** На внешнем репозитории сделать Pull Request ветки CheckLists в main 
 
 
