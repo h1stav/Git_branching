@@ -34,9 +34,30 @@ branch 'Postman' set up to track 'origin/Postman'.
 _p/c, так делаем с каждой веткой_
 
 **3.** _В ветке **Bag Reports** сделать текстовый документ со структурой баг репорта_ 
-Git checkout название ветки
 
-4. Запушить структуру багрепорта на внешний репозиторий
+_Для начала переходим в ветку **Bug_Reports**,_ _командой_ `git checkout _название ветки_`
+```
+$ git checkout Bag_Reports
+```
+Result
+```
+Already on 'Bag_Reports'
+Your branch is up to date with 'origin/Bag_Reports'.
+```
+_Создаем текстовый документ через команду `cat`_
+```
+$ cat >> bag_reports.txt
+ID
+Severity
+Title
+Steps
+Actual Result
+Expected Result
+Environment
+Priority
+```
+**4.** _Запушить структуру багрепорта на внешний репозиторий_
+
 Git add .
 Git commit -m “коментарий”
 Git push
